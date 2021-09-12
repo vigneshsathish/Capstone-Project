@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body style="background-color: chartreuse;">
+ <div class="login">
+   
+	<h1>Surge Price Prediction</h1>
+  <center>  
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <label>Trip_Distance</label><br>
+    	<input type="number"  name="Trip_Distance"  required="required" /><br>
+      <label>Life_Style_Index</label><br>
+      <input type="text" name="Life_Style_Index"  required="required" /><br>
+		  <label>Customer_Rating</label><br>
+      <input type="number"  name="Customer_Rating"  required="required" /><br>
+		  <label>Var2</label><br>
+      <input type="number" name="Var2"  required="required" /><br>
+		  <label>Var3</label><br>
+      <input type="number" name="Var3"  required="required" /><br>
+		  <label>Customer_Since_Months</label><br>
+      <input type="number" name="Customer_Since_Months"  required="required" /><br>
+		  <label>Cancellation_Last_1Month</label><br>
+      <input type="number" name="Cancellation_Last_1Month" required="required" /><br>
+		  <label>Type_of_Cab</label><br>
+      <input type="text" name="Type_of_Cab"  required="required" /><br>
+		  <label>Destination_Type</label><br>
+      <input type="text" name="Destination_Type"  required="required" />
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+   {{ prediction_text2 }}
+  </center>
+ </div>
+
+
+</body>
+</html>
