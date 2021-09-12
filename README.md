@@ -88,6 +88,8 @@ Pickled the best model stacking using pickle.dump.</br>
 Front end used HTML,CSS.</br>
 Backend used Flask.</br>
 Hosting in local storage.</br>
+Deployment link:</br>
+http://127.0.0.1:5000/
 
 # Fututre scope:
 We will ask to the client for more information regarding the price, Traffic level at the time of the trip.</br>
