@@ -76,7 +76,27 @@ Ha : Atleast one mean is not equal</br>
  We can see from Plot that within the group and between the group means are almost equal.There is an overlap it is diffcult to predict by means of linear models. so we are going for tree based models.
 
 # Evaluation metric
+F1-Weighted score was chosen as a metric of the models.
 
+# Model Comparision
+![image](https://user-images.githubusercontent.com/82166286/132981259-2842decd-240f-4eaa-9054-83e8594a2105.png)</br>
+KNN model is the Base model </br>
+Stacking model is the Final Model. F1- weighted score increased and bias error reduced.</br>
 
+# Model Deployment
+Pickled the best model stacking using pickle.dump.</br>
+Front end used HTML,CSS.</br>
+Backend used Flask.</br>
+Hosting in local storage.</br>
+
+# Fututre scope:
+We will ask to the client for more information regarding the price, Traffic level at the time of the trip.</br>
+We will use more advanced modelling techniques in order to make the prediction more accurate.
+ 
+# Conclusion
+We got exposure real world data and its implications.</br>
+We learnt about the process of cab aggregation.</br>
+We learnt about the Simple imputer library in sklearn.</br>
+After doing in depth analysis in Tableau, we learned more about the target variable which is surge pricing type.</br>
 
 
