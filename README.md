@@ -81,10 +81,10 @@ F1-Weighted score was chosen as a metric of the models.
 # Model Comparision
 ![image](https://user-images.githubusercontent.com/82166286/132981259-2842decd-240f-4eaa-9054-83e8594a2105.png)</br>
 KNN model is the Base model </br>
-Stacking model is the Final Model. F1- weighted score increased and bias error reduced.</br>
+Random Forest model is the Final Model. F1- weighted score increased and bias error reduced.</br>
 
 # Model Deployment
-Pickled the best model stacking using pickle.dump.</br>
+Pickled the best model Random Forest using pickle.dump.</br>
 Front end used HTML,CSS.</br>
 Backend used Flask.</br>
 Hosting in local storage.</br>
